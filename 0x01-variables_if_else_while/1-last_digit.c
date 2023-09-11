@@ -5,7 +5,7 @@
  * main - entry point
  *
  * Description: print the value of n status:
- * 		greater than, is zre and is not less than 6.
+ *		greater than, is zre and is not less than 6.
  *
  *i Return: 0 (success)
 */
