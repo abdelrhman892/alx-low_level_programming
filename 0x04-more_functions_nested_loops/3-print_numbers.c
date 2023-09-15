@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers- print 0 - 9
+ * print_numbers - print 0 - 9
  *		only using -puchar twice
  *
  * Return: Always 0 (Success)
