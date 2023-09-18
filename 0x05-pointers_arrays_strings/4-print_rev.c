@@ -1,0 +1,23 @@
+#include "main.h"
+
+/**
+ * print_rev - prints revarsed string, followed by a newline
+ *
+ * @s: pointer to the string to print
+ *
+ * Return: void
+*/
+
+void print_rev(char *s)
+{
+	itn i = 0;
+
+	while (s[i])
+		i++;
+
+	while (i--)
+	{
+		_putchar(s[i]);
+	}
+	_putchar('\n');
+}
