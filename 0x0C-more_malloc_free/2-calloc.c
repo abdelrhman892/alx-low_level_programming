@@ -1,5 +1,6 @@
 #include "main.h"
-/**
+#include <stdio.h>
+ /**
  * *_memset - memset
  * @s: pointer
  * @b: constant
