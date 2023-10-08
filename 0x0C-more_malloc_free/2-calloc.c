@@ -1,7 +1,7 @@
 #include "main.h"
-#include <stdio.h>
- /**
- * *_memset - memset
+
+/**
+ * *_memset - memsetss
  * @s: pointer
  * @b: constant
  * @n: max bytes to use
@@ -19,7 +19,7 @@ char *_memset(char *s, char b, unsigned int n)
 }
 
 /**
- * *_calloc - calloc
+ * *_calloc - callo ssc
  * @nmemb: array length
  * @size: size
  * Return: pointer
