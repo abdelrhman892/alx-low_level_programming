@@ -26,15 +26,15 @@ void _puts(char *str)
 int _atoi(const char *s)
 {
 	int sign = 1;
-	unsigned long int resp = 0, firstnum, i;
+	unsigned long int resp = 0, firstNum, i;
 
-	for (firstnum = 0; !(s[firstnum] >= 48 && s[firstnum] <= 57); firstnum++)
+	for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
 	{
-		if (s[firstnum] == '-')
+		if (s[firstNum] == '-')
 			sign *= -1;
 	}
 
-	for (i = firstnum; s[i] >= 48 && s[i] <= 57; i++)
+	for (i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
 	{
 		resp *= 10;
 		resp += (s[i] - 48);
