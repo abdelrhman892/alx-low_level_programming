@@ -26,7 +26,7 @@ int _strlen(const char *str)
  * Return: @dest
  */
 
-char *_strcopy(cchar *dest, char *src)
+char *_strcopy(char *dest, char *src)
 {
 	int i;
 
