@@ -6,7 +6,7 @@
  * main - chack the code
  * @argc: the number
  * @argv: argument
- * 
+ *
  * Return: Always 0
 */
 
