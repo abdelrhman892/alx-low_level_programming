@@ -57,7 +57,7 @@ int op_div(int a, int b)
  * @a: the first
  * @b: the second
  *
- * Return: the sum
+ * Return: the sums
 */
 
 int op_mod(int a, int b)
