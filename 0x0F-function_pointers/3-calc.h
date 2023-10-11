@@ -1,4 +1,4 @@
-#ifndef CALC_H
+#ifndef CALc_H
 #define CALC_H
 
 #include <stdlib.h>
@@ -6,7 +6,6 @@
 
 /**
  * struct op - struct
- *
  * @op: the operator
  * @f: function
  *
