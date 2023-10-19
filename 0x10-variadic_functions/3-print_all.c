@@ -41,7 +41,13 @@ void format_float(char *separator, va_list ap)
 
 void format_string(char *separator, va_list ap)
 {
-	printf("%s%s", separator, va_arg(ap, int));
+	char *str = va_arg(ap, char *);
+	
+	switch ((int)(!str))
+		case 1:
+			str = "(nil)";
+	
+	printf("%s%s", separator, str);
 }
 
 /**
@@ -51,7 +57,7 @@ void format_string(char *separator, va_list ap)
 
 void print_all(const char * const format, ...)
 {
-	int i = 0, j;
+	int k = 0, j;
 	char *separator = "";
 	va_list ap;
 	token_t tokens[] = {
@@ -63,19 +69,19 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(ap, format);
-	while (format && format[i])
+	while (format && format[k])
 	{
 		j = 0;
 		while (tokens[j].token)
 		{
-			if (format[i] == tokens[j].token[0])
+			if (format[k] == tokens[j].token[0])
 			{
 				tokens[j].f(separator, ap);
 				separator = ", ";
 			}
 			j++;
 		}
-		i++;
+		k++;
 	}
 	printf("\n");
 	va_end(ap);
