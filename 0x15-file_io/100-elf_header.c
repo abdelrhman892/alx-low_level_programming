@@ -234,6 +234,7 @@ void print_entry(Elf64_Ehdr h)
  *
  * Return: 1 on success
  */
+
 int main(int ac, char **av)
 {
 	int fd;
@@ -250,7 +251,9 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Can't read from file: %s\n", av[1]), exit(98);
 	if (h.e_ident[0] == 0x7f && h.e_ident[1] == 'E' && h.e_ident[2] == 'L' &&
 			h.e_ident[3] == 'F')
-		printf("ELF Header:\n");
+	{
+		printf("ELF Header: \n");
+	}
 	else
 		dprintf(STDERR_FILENO, "Not ELF file: %s\n", av[1]), exit(98);
 	print_magic(h);
@@ -261,6 +264,7 @@ int main(int ac, char **av)
 	print_abiversion(h);
 	print_type(h);
 	print_entry(h);
+
 	if (close(fd))
 		dprintf(STDERR_FILENO, "Error closing file descriptor: %d\n", fd), exit(98);
 	return (EXIT_SUCCESS);
