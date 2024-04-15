@@ -12,4 +12,5 @@
   <li>What is the official C coding style and how to check your code with <code>betty-style</code></li>
   <li>How to find the right header to include in your source code when using a standard library function</li>
   <li>How does the <code>main</code> function influence the return value of the program</li>
+  <li>Package libc6-dev-i386, and what it do</li>
 </ul>
