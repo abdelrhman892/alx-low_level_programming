@@ -3,7 +3,8 @@
 /**
  * main - Entry point
  *
- * Description: A C program that prints with put function
+ * Description: prints the size of various (32, 64)
+ * 		types on the computer it is compiled and run on
  *
  * Return: Alawys 0 (Success)
 */
